@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <title>Portfolio 2.0</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-    <nav>
-        <a id="about-me">About Me</a>
-        <a id="projects">Projects</a>
-        <a id="skill-set">Skill Set</a>
-        <a id="contact">Contact</a>
+    <nav class="action">
+        <a id="about-me" href="#"  data-slide="1">About Me</a>
+        <a id="projects" href="#"  data-slide="2">Projects</a>
+        <a id="skill-set" href="#"  data-slide="3">Skill Set</a>
+        <a id="contact" href="#"  data-slide="4">Contact</a>
     </nav>
 
     <header>
@@ -20,22 +21,26 @@
     </header>
     
     <main >
-            <section id="about-me-slide" class="mySlides fade">
+        <div class="carousel">
+            <section id="about-me-slide" class="mySlides">
                 <h2> About Me </h2>
             </section>
-            <section id="projects-slide" class="mySlides fade">
+            <section id="projects-slide" class="mySlides">
                 <h2> Projects </h2>
             </section>
-            <section id="skill-set-slide" class="mySlides fade">
+            <section id="skill-set-slide" class="mySlides">
                 <h2> Skills </h2>
             </section>
-            <section id="contact-slide" class="mySlides fade">
+            <section id="contact-slide" class="mySlides">
                 <h2> Contact Me </h2>
             </section>
+        </div>
     </main>
 
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-<script src="assets/js/script.js"></script>
 
 </html>
