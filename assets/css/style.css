@@ -32,14 +32,26 @@ header{
     background-color: cyan;
 }
 
+
 .mySlides{
     height: 500px;
 }
-
-
 .carousel {
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
   }
+h3, i{
+    display: block;
+}
+
+fieldset > input, fieldset > label, fieldset > textarea{
+    display: block;
+    align-content: center;
+    width: 100%;
+}
+
+h2, #contact-slide > p, #social{
+    text-align: center;
+}
