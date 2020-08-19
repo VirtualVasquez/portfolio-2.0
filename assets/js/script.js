@@ -1,4 +1,3 @@
-
 $('.carousel').slick({
   infinite: true,
   speed: 500,
@@ -15,3 +14,11 @@ $('a[data-slide]').click(function(e) {
     $('.carousel').slick('slickGoTo', slideno -1);
 });
 
+$(function () {
+  // Grab the template script
+  var theTemplateScript = $("#project-template").html();
+  // Compile the template
+  var theTemplate = Handlebars.compile(theTemplateScript);
+  //display the template in html
+  $('.content-placeholder').html(theTemplate(repository));
+});

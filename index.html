@@ -19,7 +19,7 @@
     
     <main >
         <div class="carousel">
-            <section id="about-me-slide" class="mySlides">
+            <!-- <section id="about-me-slide" class="mySlides">
                 
                 <div id="sub">
                     <h1>Web Developer, Problem Solver & Creative Thinker</h1>
@@ -82,13 +82,11 @@
                     </div>
 
         </div>
-            </section>
+            </section> -->
             <section id="projects-slide" class="mySlides">
                 <h2> Projects </h2>
+                <div class="content-placeholder"></div>
             </section>
-            <!-- <section id="skill-set-slide" class="mySlides">
-                <h2> Skills </h2>
-            </section> -->
             <section id="contact-slide" class="mySlides">
                 <h2> Contact Me </h2>
                 <p>Together we can start something great!</p>
@@ -100,7 +98,7 @@
                     <label for="subject">Subject</label>
                     <input id="subject" name="subject" type="text">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="10">Dummy text</textarea>
+                    <textarea id="message" name="message" rows="10"></textarea>
                     <!-- <output name="" for=""></output> -->
                     <input type="submit">
                     </fieldset>
@@ -116,10 +114,38 @@
         </div>
     </main>
 
+    <script id="project-template" type="text/x-handlebars-template">
+        {{#each projects}}
+          <div class="square gradients hidden">
+              <div class="hoverOff hidden" style="background-image:url('assets/images/{{picture}}.png')">
+                <h2><strong>{{name}}</strong></h2>
+              </div>
+              <div class="hoverOn hidden">
+                <div class="top">
+                  <h4>{{preview}}</h4>
+                </div>
+                <div class="buttons">
+                  {{#if url}}<a href="{{url}}" target="_blank"><button><strong>Website</strong></button></a>{{/if}}
+                  {{#unless url}}{{/unless}}
+                  <a href="{{repo}}" target="_blank"><button><strong>GitHub Repo</strong></button></a>
+                </div>
+              </div>
+          </div>
+        {{/each}}     
+      </script>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/handlebars-v4.7.6.js"></script>
+    <script src="assets/js/projects.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <!-- <script id="address-template" type="text/x-handlebars-template">
+        <p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
+      </script> -->
+      
+
 </body>
 
 </html>
