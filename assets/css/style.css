@@ -22,26 +22,32 @@ nav a:hover {
     color: black;
 }
 
-h1 span{
-    display:block;
-}
-
 header{
     margin-top: 50px; /* Add a top margin to avoid content overlay */
     text-align: center;
     background-color: cyan;
 }
 
-
-.mySlides{
-    height: 500px;
-}
 .carousel {
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
   }
+
+#about-me-slide > h1, #about-me-slide > p{
+    text-align: center;
+}
+
+#skills-grid{
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    /* display: flexbox; */
+}
+
+
+
 h3, i{
     display: block;
 }
