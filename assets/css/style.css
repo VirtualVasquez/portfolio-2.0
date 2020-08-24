@@ -48,7 +48,7 @@ header{
 
 #skills-grid{
     display: inline-grid;
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1em; 
 }
 
@@ -59,11 +59,6 @@ header{
 .skills-item{
     background-color:blue;
 }
-
-
-
-
-
 
 
 h3, i{
@@ -78,4 +73,52 @@ fieldset > input, fieldset > label, fieldset > textarea{
 
 h2, #contact-slide > p, #social{
     text-align: center;
+}
+
+/* projects css */
+#grid-container{
+    display: inline-block;
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 2.5%;
+    justify-content: center;
+}
+
+#grid{
+ display:grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ grid-gap: 1rem;
+ margin: 0;
+ padding:0;
+}
+
+.square::before{
+    content:"";
+    padding-bottom: 100%;
+    display: block;
+}
+
+.square{
+    display: grid;
+    background: blue;
+    padding: 1rem;
+}
+
+.square::before,
+.sub-square{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.sub-square{
+    background-size: contain;
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
 }

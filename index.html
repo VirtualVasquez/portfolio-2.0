@@ -12,14 +12,13 @@
         <nav class="action">
             <a id="about-me" href="#"  data-slide="1">About Me</a>
             <a id="projects" href="#"  data-slide="2">Projects</a>
-            <!-- <a id="skill-set" href="#"  data-slide="3">Skill Set</a> -->
             <a id="contact" href="#"  data-slide="3">Contact</a>
         </nav>
     </header>
     
     <main >
         <div class="carousel">
-            <!-- <section id="about-me-slide" class="mySlides">
+            <section id="about-me-slide" class="mySlides">
                 
                 <div id="sub">
                     <h1>Web Developer, Problem Solver & Creative Thinker</h1>
@@ -82,24 +81,25 @@
                     </div>
 
         </div>
-            </section> -->
+            </section>
             <section id="projects-slide" class="mySlides">
                 <h2> Projects </h2>
-                <div class="content-placeholder"></div>
+                <div id="grid-container">
+                    <div id="grid">      
+                    </div>              
+                </div>
             </section>
             <section id="contact-slide" class="mySlides">
                 <h2> Contact Me </h2>
                 <p>Together we can start something great!</p>
                 <form>
                     <fieldset>
-                    <!-- <legend></legend> -->
                     <label for="email">Email</label>
                     <input id="email" name="email" type="text">
                     <label for="subject">Subject</label>
                     <input id="subject" name="subject" type="text">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="10"></textarea>
-                    <!-- <output name="" for=""></output> -->
                     <input type="submit">
                     </fieldset>
                 </form>
@@ -116,21 +116,13 @@
 
     <script id="project-template" type="text/x-handlebars-template">
         {{#each projects}}
-          <div class="square gradients hidden">
-              <div class="hoverOff hidden" style="background-image:url('assets/images/{{picture}}.png')">
-                <h2><strong>{{name}}</strong></h2>
-              </div>
-              <div class="hoverOn hidden">
-                <div class="top">
-                  <h4>{{preview}}</h4>
+            <div class="square">
+                <div class="sub-square" style=background-image:url('assets/images/{{picture}}.png')>
+                    <div class="text">
+                        <h3>{{name}}</h3>
+                    </div>
                 </div>
-                <div class="buttons">
-                  {{#if url}}<a href="{{url}}" target="_blank"><button><strong>Website</strong></button></a>{{/if}}
-                  {{#unless url}}{{/unless}}
-                  <a href="{{repo}}" target="_blank"><button><strong>GitHub Repo</strong></button></a>
-                </div>
-              </div>
-          </div>
+            </div>
         {{/each}}     
       </script>
 

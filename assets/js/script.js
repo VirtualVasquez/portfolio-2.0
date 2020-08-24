@@ -12,7 +12,7 @@ $('a[data-slide]').click(function(e) {
     e.preventDefault();
     var slideno = $(this).data('slide');
     $('.carousel').slick('slickGoTo', slideno -1);
-});
+});``
 
 $(function () {
   // Grab the template script
@@ -20,5 +20,5 @@ $(function () {
   // Compile the template
   var theTemplate = Handlebars.compile(theTemplateScript);
   //display the template in html
-  $('.content-placeholder').html(theTemplate(repository));
+  $('#grid').html(theTemplate(repository)); 
 });
