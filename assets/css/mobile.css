@@ -1,7 +1,12 @@
 /* Extra small devices (phones, 600px and down) */
-
-body{margin:0;}
-#projects, #contact{
+body{
+    margin:0;
+    font-family: 'Oxygen', sans-serif;
+}    
+h1{
+    font-size: 2.5em;
+}
+#projects, #contact, #about, header{
     display:none;
 }
 /* nav css */
@@ -20,7 +25,6 @@ nav a{
     padding: 14px 16px;
     text-decoration: none;
 }
-
 nav a:hover {
     background: #ddd;
     color: black;
@@ -28,51 +32,38 @@ nav a:hover {
 /* nav css end */
 
 /* main css */
-/* main{
-    padding-top: 30px;
-} */
+main{
+    /* background-color: #c4d9fc;
+	background-image: linear-gradient(#e8effc, #c4d9fc); */
+}
 /* main css end */
 
 
 /* about css */
+#intro{
+    display:flex;
+    width:100vw;
+    height: 100vh;
+    margin: auto;
+}
 #badge{
+    margin:auto;
+    width: 100%;
+    /* border: 2px solid black;
+    text-align: center; */
+}
+#next{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    /* margin-top: 35vh;
-    margin-bottom: 50vh; */
-}
-h1 > span{
-    display: block;
-}
-#badge{
-    border: 2px solid black;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#headshot{
-    width: 175px;
-    height: 100%;
-    margin-top: 7px;
-    border-radius: 50%;
-    margin-left: 2px;
+    bottom:0;
+    text-align: right;
+    /* background-color:red; */
+    width: 90%;
+    margin-left: 5%;  
 }
 
-#badge-text{
-    display:flex;
-    flex-direction: column;
-    align-content: space-between;
-    bottom: 0;
-    text-align: left;
-    margin-right: 5px;
-}
-#exposition{
-    position: absolute;
-    top: 150%;
-    transform: translateY(-50%);
-    width: 100%;
+
+h1 > span{
+    display: block;
 }
 
 

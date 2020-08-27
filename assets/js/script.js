@@ -1,6 +1,8 @@
 let aboutPage = document.getElementById("about");
 let projectsPage = document.getElementById("projects");
 let contactPage = document.getElementById("contact");
+let badge = document.getElementById("badge");
+
 
 $(function () {
   // Grab the template script
@@ -26,5 +28,8 @@ document.addEventListener("click", function(event){
     aboutPage.style.display = "none";
     projectsPage.style.display = "none";
     contactPage.style.display = "block";
-  } 
+  }
+  // if(event.target.matches("#resume-nav")){
+  //   badge.style.top = "10%";
+  // }
 })
