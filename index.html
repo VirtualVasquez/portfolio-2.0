@@ -3,30 +3,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <title>Portfolio 2.0</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/p-tablet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/l-tablet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/laptop.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/desktop.css"> -->
+
     <script src="https://kit.fontawesome.com/e90d73177a.js" crossorigin="anonymous"></script></head>
 <body>
 
     <header>
         <nav class="action">
-            <a id="about-me" href="#"  data-slide="1">About Me</a>
-            <a id="projects" href="#"  data-slide="2">Projects</a>
-            <a id="contact" href="#"  data-slide="3">Contact</a>
+            <a id="about-nav" href="#">About Me</a>
+            <a id="projects-nav" href="#">Projects</a>
+            <a id="contact-nav" href="#">Contact</a>
+            <a id="resume-nav">Resume</a>
         </nav>
     </header>
     
     <main >
-        <div class="carousel">
-            <section id="about-me-slide" class="mySlides">
-                
-                <div id="sub">
-                    <h1>Web Developer, Problem Solver & Creative Thinker</h1>
-                    <p>I make cool creations with clean code.</p>
+            <section id="about">
+                <div id="badge">
+                    <img id="headshot" src="assets/images/Headshot.png">
+                    <div id="badge-text">
+                        <h1>
+                            <span>Web Developer</span>
+                            <span>Problem Solver</span>
+                            <span>Creative Thinker</span>
+                        </h1>
+                        <p>Making cool creations with clean code</p>
+                    </div>
+                </div>
+
+                <div id="exposition">
                     <p>Salutations, my name is Melvin. It's my pleasure to make your acquaintance.</p>                    
                     <p>I am excited at the limitless possibilties in web development. Trained as a MERN stack developer - MongoDB, Express.js, React.js, and Node.js - 
                         I am always attempting to surpass my limits in my endeavors to solve problems, improve solutions, and help others.</p>
                 </div>
+                <!-- 
                 <div id="skills-grid">
 
                     <div class="skills-item">
@@ -80,38 +94,37 @@
 
                     </div>
 
-        </div>
+                </div> -->
             </section>
-            <section id="projects-slide" class="mySlides">
-                <h2> Projects </h2>
-                <div id="grid-container">
-                    <div id="grid">      
-                    </div>              
-                </div>
-            </section>
-            <section id="contact-slide" class="mySlides">
-                <h2> Contact Me </h2>
-                <p>Together we can start something great!</p>
-                <form>
-                    <fieldset>
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="text">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="10"></textarea>
-                    <input type="submit">
-                    </fieldset>
-                </form>
-                    <div id="social">
-                    <h3>Social Media</h3>
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                    <i class="fab fa-linkedin fa-2x"></i>
-                    <i class="fab fa-github-square fa-2x"></i>
+            <section id="projects" >
+                    <h2> Projects </h2>
+                    <div id="grid-container">
+                        <div id="grid">      
+                        </div>              
                     </div>
             </section>
-        </div>
+            <section id="contact">
+                    <h2> Contact Me </h2>
+                    <p>Together we can start something great!</p>
+                    <form>
+                        <fieldset>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="10"></textarea>
+                        <input type="submit">
+                        </fieldset>
+                    </form>
+                        <div id="social">
+                        <h3>Social Media</h3>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <i class="fab fa-github-square fa-2x"></i>
+                        </div>
+            </section>
     </main>
 
     <script id="project-template" type="text/x-handlebars-template">

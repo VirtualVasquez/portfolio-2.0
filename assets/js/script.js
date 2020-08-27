@@ -1,18 +1,6 @@
-$('.carousel').slick({
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-  dots:false,
-  arrows:false,
-  draggable: false
-});
-
-$('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = $(this).data('slide');
-    $('.carousel').slick('slickGoTo', slideno -1);
-});``
+let aboutPage = document.getElementById("about");
+let projectsPage = document.getElementById("projects");
+let contactPage = document.getElementById("contact");
 
 $(function () {
   // Grab the template script
@@ -22,3 +10,21 @@ $(function () {
   //display the template in html
   $('#grid').html(theTemplate(repository)); 
 });
+
+document.addEventListener("click", function(event){
+  if(event.target.matches("#about-nav")){
+    aboutPage.style.display = "block";
+    projectsPage.style.display = "none";
+    contactPage.style.display = "none";
+  }
+  if(event.target.matches("#projects-nav")){
+    aboutPage.style.display = "none";
+    projectsPage.style.display = "block";
+    contactPage.style.display = "none";
+  } 
+  if(event.target.matches("#contact-nav")){
+    aboutPage.style.display = "none";
+    projectsPage.style.display = "none";
+    contactPage.style.display = "block";
+  } 
+})

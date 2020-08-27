@@ -1,0 +1,162 @@
+/* Extra small devices (phones, 600px and down) */
+
+body{margin:0;}
+#projects, #contact{
+    display:none;
+}
+/* nav css */
+header{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+nav a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ddd;
+    color: black;
+}
+/* nav css end */
+
+/* main css */
+/* main{
+    padding-top: 30px;
+} */
+/* main css end */
+
+
+/* about css */
+#badge{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* margin-top: 35vh;
+    margin-bottom: 50vh; */
+}
+h1 > span{
+    display: block;
+}
+#badge{
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#headshot{
+    width: 175px;
+    height: 100%;
+    margin-top: 7px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+#badge-text{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    bottom: 0;
+    text-align: left;
+    margin-right: 5px;
+}
+#exposition{
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+/* about css end */
+
+
+/* projects css */
+#grid-container{
+    display: inline-block;
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 2.5%;
+    justify-content: center;
+}
+
+#grid{
+ display:grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ grid-gap: 1rem;
+ margin: 0;
+ padding:0;
+}
+
+.square::before{
+    content:"";
+    padding-bottom: 100%;
+    display: block;
+}
+
+.square{
+    display: grid;
+    background: blue;
+    padding: 1rem;
+}
+
+.square::before,
+.sub-square{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.sub-square{
+    background-size: contain;
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+}
+/* end projects css */
+
+/* contact css */
+fieldset > input, fieldset > label, fieldset > textarea{
+    display: block;
+    align-content: center;
+    width: 100%;
+}
+/* contact css end */
+
+
+
+/* #skills-grid{
+    display: inline-grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em; 
+}
+
+.skills-item > p {
+    text-align: center;
+}
+
+.skills-item{
+    background-color:blue;
+} */
+
+/* #sub, #skills-grid{
+    width: 70%;
+    margin-left: 15%;
+} */
+
+/* h3, i{
+    display: block;
+} */
