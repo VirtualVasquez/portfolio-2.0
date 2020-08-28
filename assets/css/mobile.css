@@ -49,17 +49,17 @@ main{
 #badge{
     margin:auto;
     width: 100%;
+
     /* border: 2px solid black;
     text-align: center; */
 }
-#next{
+/* #next{
     position: absolute;
     bottom:0;
     text-align: right;
-    /* background-color:red; */
     width: 90%;
     margin-left: 5%;  
-}
+} */
 
 
 h1 > span{
