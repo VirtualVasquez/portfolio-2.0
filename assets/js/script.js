@@ -12,7 +12,7 @@ const delayLoop = (fn, delay) => {
   };
 };
 
-function typeWriter(target, text, speed){
+const typeWriter = (target, text, speed) => {
   const output = document.getElementById(target);
   let arr = text.split("");
   const display = s => output.innerHTML += s;
@@ -20,15 +20,21 @@ function typeWriter(target, text, speed){
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function(){
-  
-  typeWriter("t1", "Web Developer", 50)
-  typeWriter("t2", "Problem Solver", 50)
-  typeWriter("t3", "Creative Thinker", 50)
-  typeWriter("t4", "Making cool creations with clean code", 20)
-  
+  for (let i = 1; i < 6; i++){
+    if (i < 4){
+      document.getElementById("t" + i).innerHTML += `&nbsp`;
+    }
+    if(i > 3){
+      document.getElementById("t" + i).innerHTML += `&nbsp&nbsp&nbsp`
+    }
 
+  }
+  typeWriter("t1", "Web Developer", 100);
+  setTimeout(()=>{typeWriter("t2", "Problem Solver", 100)},1400) //700 = 14 * timeinterval
+  setTimeout(()=>{typeWriter("t3", "Creative Thinker", 100)}, 2800) //*16
+  setTimeout(()=>{typeWriter("t4", "Making cool creations ", 50)}, 5000)
+  setTimeout(()=>{typeWriter("t5", "with cool code", 50)}, 7000)
 })
 //   p.then((message) = > {
 //     console.log("This is in the then" +  message)
