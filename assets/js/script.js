@@ -1,8 +1,7 @@
-let aboutPage = document.getElementById("about");
-let projectsPage = document.getElementById("projects");
-let contactPage = document.getElementById("contact");
-let badge = document.getElementById("badge");
-
+const aboutPage = document.getElementById("about");
+const projectsPage = document.getElementById("projects");
+const contactPage = document.getElementById("contact");
+const introPage = document.getElementById("intro");
 //delayLoop function and (modified) display function courtesy of Travis Horn | https://travishorn.com/delaying-foreach-iterations-2ebd4b29ad30#:~:text=Now%20you%20can%20use%20delayLoop,to%20delay%20between%20each%20iteration.
 const delayLoop = (fn, delay) => {
   return (x, i) => {
@@ -28,23 +27,14 @@ document.addEventListener("DOMContentLoaded", function(){
     if(i > 3){
       document.getElementById("t" + i).innerHTML += `&nbsp&nbsp&nbsp`
     }
-
   }
-  typeWriter("t1", "Web Developer", 100);
-  setTimeout(()=>{typeWriter("t2", "Problem Solver", 100)},1400) //700 = 14 * timeinterval
-  setTimeout(()=>{typeWriter("t3", "Creative Thinker", 100)}, 2800) //*16
-  setTimeout(()=>{typeWriter("t4", "Making cool creations ", 50)}, 5000)
-  setTimeout(()=>{typeWriter("t5", "with cool code", 50)}, 7000)
+  setTimeout(()=>{typeWriter("t1", "Web Developer", 20)}, 500);
+  $("header").fadeIn(2000)
+  setTimeout(()=>{typeWriter("t2", "Problem Solver", 20)}, 1000) //700 = 14 * timeinterval
+  setTimeout(()=>{typeWriter("t3", "Creative Thinker", 20)}, 1500) //*16
+  setTimeout(()=>{typeWriter("t4", "Making cool creations,", 50)}, 2000)
+  setTimeout(()=>{typeWriter("t5", "One line at a time", 50)}, 3500)
 })
-//   p.then((message) = > {
-//     console.log("This is in the then" +  message)
-//   }).catch((message) => {
-//     console.log("this is in the catch" + message)
-//   })
-
-// });
-
-
 
 $(function () {
   // Grab the template script
