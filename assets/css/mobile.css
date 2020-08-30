@@ -11,7 +11,7 @@ h5{font-size: 1.3em;}
 h6{font-size: 1.1em;}
 p{font-size: 1em}
 
-#projects, #contact, header{
+#about, #contact, header{
     display:none;
 }
 /* nav css */
@@ -37,9 +37,10 @@ nav a:hover {
 }
 /* nav css end */
 
-section{
+section, #exposition{
     padding-top: 2.5em;
 }
+
 
 #exposition > h2,h3{
     text-align: center;
@@ -91,22 +92,21 @@ h1 > span{
 }
 .no-list{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
     list-style-type: none;
     padding: 0;
-    border: 1px solid black;
-
+    /* border: 1px solid black; */
 }
-.no-list > li{
-    display: inline-block;
 
-}
 /* about css end */
 
 
 /* projects css */
+#projects{
+    text-align: center;
+}
 #grid-container{
     display: inline-block;
     border: 1px solid black;
