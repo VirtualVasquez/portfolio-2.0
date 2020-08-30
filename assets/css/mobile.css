@@ -4,9 +4,12 @@ body{
     font-family: 'Oxygen', sans-serif;
 }    
 h1{font-size: 2.5em;}
-h2{font-size: 2.0em;}
-h3{font-size: 1.5em;}
-p{font-size: 1.2em}
+h2{font-size: 2.2em;}
+h3{font-size: 2.0em;}
+h4{font-size: 1.5em;}
+h5{font-size: 1.3em;}
+h6{font-size: 1.1em;}
+p{font-size: 1em}
 
 #projects, #contact, header{
     display:none;
@@ -75,25 +78,30 @@ h1 > span{
 #exposition{
     text-align: justify;
 }
-
-#d-devices{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: cyan;
+.rule-of-three{
     text-align: center;
-    align-items: center;
+    border: 1px solid black;
+    padding: 1em;
 }
-
-#d-right{
+.rule-of-three > i{
+    margin: 0.3em;
+}
+#quirks > div{
+    border: 1px solid black;
+}
+.no-list{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid black;
 
-#d-right > i{
-    margin: 0.2em;
+}
+.no-list > li{
+    display: inline-block;
+
 }
 /* about css end */
 
