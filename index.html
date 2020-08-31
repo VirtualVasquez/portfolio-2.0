@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <title>Portfolio 2.0</title>
     <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/p-tablet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/p-tablet.css">
     <link rel="stylesheet" type="text/css" href="assets/css/l-tablet.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/laptop.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/desktop.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/laptop.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/desktop.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e90d73177a.js" crossorigin="anonymous"></script></head>
 <body>
@@ -128,13 +128,11 @@
             
         </section> -->
 
-        <section id="projects" >
+        <section id="projects" class="margin" >
             <h2> Projects </h2>
             <p>Take a look at some of my work.</p>
-                <div id="grid-container">
-                    <div id="grid">      
-                    </div>              
-                </div>
+            <div id="grid">      
+            </div>              
         </section>
 
         <section id="contact">
@@ -163,12 +161,21 @@
 
     <script id="project-template" type="text/x-handlebars-template">
         {{#each projects}}
-            <div class="square">
-                <div class="sub-square" style=background-image:url('assets/images/{{picture}}.png')>
-                    <div class="text">
-                        <h3>{{name}}</h3>
+            <div class="square" >
+                
+                <div class="content hover-off" style=background-image:url('assets/images/{{picture}}.png')>
+                    <div>
+                        <h4>{{name}}</h4>                    
                     </div>
                 </div>
+
+                <div class="content hover-on">
+                    <div>
+                        <p>{{preview}}</p>                    
+                        <a href='{{url}}'>Go now</a>
+                    </div>
+                </div>
+                
             </div>
         {{/each}}     
       </script>

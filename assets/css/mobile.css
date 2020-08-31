@@ -11,14 +11,13 @@ h5{font-size: 1.3em;}
 h6{font-size: 1.1em;}
 p{font-size: 1em}
 
-#about, #contact, header{
+#about, #contact{
     display:none;
 }
 /* nav css */
 header{
     background-color: #333;
     position: fixed;
-    /* top: 0; */
     width: 100%;
     text-align: center;
     font-size: 0.9em;
@@ -92,14 +91,9 @@ h1 > span{
 }
 .no-list{
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
     list-style-type: none;
     padding: 0;
-    /* border: 1px solid black; */
 }
-
 /* about css end */
 
 
@@ -107,52 +101,46 @@ h1 > span{
 #projects{
     text-align: center;
 }
-#grid-container{
-    display: inline-block;
-    border: 1px solid black;
-    width: 95%;
-    margin-left: 2.5%;
-    justify-content: center;
-}
 
 #grid{
- display:grid;
- grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
- grid-gap: 1rem;
- margin: 0;
- padding:0;
-}
-
-.square::before{
-    content:"";
-    padding-bottom: 100%;
-    display: block;
-}
-
-.square{
+    width: 80%;
+    margin-left: 10%;
     display: grid;
-    background: blue;
-    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+.square{
+    border: solid 1px black;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.square::before,
-.sub-square{
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.sub-square{
-    background-size: contain;
-}
-
-.text{
-    text-align: center;
-    display: flex;
-    width: 50%;
+.content{
+    position: absolute;
     height: 100%;
-    margin: auto;
-    align-items:center;
-    justify-content:center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.hover-on{
+    display: none; 
+}
+.hover-off{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.square:hover .hover-off{
+    display: none;
+}
+
+.square:hover .hover-on{
+    display: flex;
+}
+
 /* end projects css */
 
 /* contact css */
@@ -162,3 +150,4 @@ fieldset > input, fieldset > label, fieldset > textarea{
     width: 100%;
 }
 /* contact css end */
+

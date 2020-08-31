@@ -1,8 +1,10 @@
-@media only screen and (min-width: 768px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     #grid{
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
+        width:70%;
     }
     .square{
         border: solid 1px black;
@@ -10,4 +12,10 @@
         padding-bottom: 100%;
         position: relative;
         overflow: hidden;
+}
+
+@media only screen and (min-width: 1920px) {
+    #grid{
+    width: 50%;
+    }
 }
