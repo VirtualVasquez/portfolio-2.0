@@ -20,27 +20,29 @@ const typeWriter = (target, text, speed) => {
 
 
 document.addEventListener("DOMContentLoaded", function(){
-  // for (let i = 1; i < 6; i++){
-  //   if (i < 4){
-  //     document.getElementById("t" + i).innerHTML += `&nbsp`;
-  //   }
-  //   if(i > 3){
-  //     document.getElementById("t" + i).innerHTML += `&nbsp&nbsp&nbsp`
-  //   }
-  // }
-  // setTimeout(()=>{typeWriter("t1", "Web Developer", 20)}, 500);
-  // $("header").fadeIn(2000)
-  // setTimeout(()=>{typeWriter("t2", "Problem Solver", 20)}, 1000) //700 = 14 * timeinterval
-  // setTimeout(()=>{typeWriter("t3", "Creative Thinker", 20)}, 1500) //*16
-  // setTimeout(()=>{typeWriter("t4", "Making cool creations,", 50)}, 2000)
-  // setTimeout(()=>{typeWriter("t5", "One line at a time", 50)}, 3500)
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    // true for mobile device
-    document.write("mobile device");
-  }else{
-    // false for not mobile device
-    document.write("not mobile device");
+  for (let i = 1; i < 6; i++){
+    if (i < 4){
+      document.getElementById("t" + i).innerHTML += `&nbsp`;
+    }
+    if(i > 3){
+      document.getElementById("t" + i).innerHTML += `&nbsp&nbsp&nbsp`
+    }
   }
+  setTimeout(()=>{typeWriter("t1", "Web Developer", 20)}, 500);
+  $("header").fadeIn(2000)
+  setTimeout(()=>{typeWriter("t2", "Problem Solver", 20)}, 1000) //700 = 14 * timeinterval
+  setTimeout(()=>{typeWriter("t3", "Creative Thinker", 20)}, 1500) //*16
+  setTimeout(()=>{typeWriter("t4", "Making cool creations,", 50)}, 2000)
+  setTimeout(()=>{typeWriter("t5", "One line at a time", 50)}, 3500)
+
+  
+  // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  //   // true for mobile device
+  //   document.write("mobile device");
+  // }else{
+  //   // false for not mobile device
+  //   document.write("not mobile device");
+  // }
 })
 
 $(function () {
