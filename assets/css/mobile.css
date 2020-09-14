@@ -81,8 +81,9 @@ nav a:hover {
 
 /* site-wide */
 .margin{
-    padding: 2.5em;
     border: solid red 1px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 /* about css */
@@ -102,6 +103,7 @@ h1 > span{
 }
 #exposition{
     text-align: justify;
+    padding-top: 2em;
 }
 #exposition > h2{
     text-align: center;
@@ -109,11 +111,27 @@ h1 > span{
 h2 > span{
     display: inline-block;
 }
-
-#one-for-all, #all-for-one{
+#exposition > p{
+    text-align: center;
 }
 
+#g-vs-e{
+    width: 100%;
+}
+#g-vs-e > div{
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    
+}
 
+.icons{
+    display: flex;
+    justify-content: space-around;
+    border: solid red 1px;
+}
 
 
 .rule-of-three{
