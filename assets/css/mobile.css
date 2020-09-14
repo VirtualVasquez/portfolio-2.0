@@ -4,14 +4,13 @@ body{
     font-family: 'Oxygen', sans-serif;
 }    
 h1{font-size: 2.5em;}
-h2{font-size: 2.2em;}
-h3{font-size: 2.0em;}
-h4{font-size: 1.5em;}
-h5{font-size: 1.3em;}
-h6{font-size: 1.1em;}
-p{font-size: 1em}
+h2{font-size: 2.0em;}
+h3{font-size: 1.8em;}
+h4{font-size: 1.6em;}
+h5{font-size: 1.4em;}
+p, li{font-size: 1.2em}
 
-#about, #contact{
+#contact, #projects, #contact{
     display:none;
 }
 /* nav css */
@@ -22,6 +21,7 @@ header{
     text-align: center;
     font-size: 0.9em;
     z-index: 10;
+    top:0;
 }
 nav a{
     display: inline-block;
@@ -36,28 +36,54 @@ nav a:hover {
 }
 /* nav css end */
 
-section, #exposition{
-    padding-top: 2.5em;
-}
-
-
-#exposition > h2,h3{
-    text-align: center;
-}
-h2 > span, h3 > span{
-    display: inline-block;
-}
 .fas{
     color:blue;
     align-content: margin;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* site-wide */
 .margin{
-    width: 90%;
-    margin-left: 5%;
+    padding: 2.5em;
+    border: solid red 1px;
 }
-
-
 
 /* about css */
 #intro{
@@ -65,23 +91,35 @@ h2 > span, h3 > span{
     width:100vw;
     height: 100vh;
     margin: auto;
+    background-color: cadetblue;
 }
 #badge{
     margin:auto;
     width: 100%;
 }
-
 h1 > span{
     display: block;
 }
-
 #exposition{
     text-align: justify;
 }
+#exposition > h2{
+    text-align: center;
+}
+h2 > span{
+    display: inline-block;
+}
+
+#one-for-all, #all-for-one{
+}
+
+
+
+
 .rule-of-three{
     text-align: center;
     border: 1px solid black;
-    padding: 1em;
+    /* padding: 1em; */
 }
 .rule-of-three > i{
     margin: 0.3em;
@@ -95,6 +133,31 @@ h1 > span{
     padding: 0;
 }
 /* about css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* projects css */
@@ -140,9 +203,7 @@ h1 > span{
 .square:hover .hover-on{
     display: flex;
 }
-
 /* end projects css */
-
 /* contact css */
 fieldset > input, fieldset > label, fieldset > textarea{
     display: block;
