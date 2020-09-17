@@ -1,4 +1,10 @@
 @media only screen and (min-width: 992px) {
+    #badge > h1{
+        font-size: 4.9em;
+    }
+    #badge > p{
+        font-size: 2.4em;
+    }
     .margin{
         width: 70%;
         margin-left: 15%;

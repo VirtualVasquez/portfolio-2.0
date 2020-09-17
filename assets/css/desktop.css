@@ -1,5 +1,11 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    #badge > h1{
+        /* font-size: 8em; */
+    }
+    #badge > p{
+        /* font-size: 3.5em; */
+    }
     #grid{
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
