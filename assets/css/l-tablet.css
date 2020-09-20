@@ -1,23 +1,21 @@
 @media only screen and (min-width: 768px) {
-    /* #badge > h1{
-        font-size: 4.1em;
-    }
-    #badge > p{
-        font-size: 2.4em;
-    } */
 
-
-    #about{
+    #wrapper{
         display: flex;
         flex-direction: row;
     }
     #left{
-        flex-basis: 50%;
+        flex-basis: 45%;
     }
     #right{
         overflow: scroll;
         height: 100vh;
-        flex-basis: 50%;
+        flex-basis: 55%;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
     }
 
 

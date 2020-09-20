@@ -1,34 +1,20 @@
 @media only screen and (min-width: 992px) {
-    /* #badge > h1{
-        font-size: 4.9em;
-    }
-    #badge > p{
-        font-size: 2.4em;
-    } */
-    /* .margin{
+    .margin{
         width: 70%;
         margin-left: 15%;
-    } */
-
-    #badge > h1{
-        font-size: 3.5em;
     }
-    #badge > p{
-        font-size: 2.2em;
-    }
-
 
     #about{
         display: flex;
         flex-direction: row;
     }
     #left{
-        flex-basis: 45%;
+        flex-basis: 35%;
     }
     #right{
         overflow: scroll;
         height: 100vh;
-        flex-basis: 55%;
+        flex-basis: 65%;
     }
 
 

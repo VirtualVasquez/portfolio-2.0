@@ -80,11 +80,11 @@ nav a:hover {
 
 
 /* site-wide */
-/* .margin{
-    border: solid red 1px;
+.margin{
+    /* border: solid red 1px; */
     width: 90%;
     margin-left: 5%;
-} */
+}
 #left{
     background-color: cadetblue;
     display:flex;
@@ -150,9 +150,7 @@ h2 > span{
 .rule-of-three > i{
     margin: 0.3em;
 }
-#quirks > div{
-    border: 1px solid black;
-}
+
 .no-list{
     width: 100%;
     list-style-type: none;

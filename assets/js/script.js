@@ -47,7 +47,7 @@ $(function () {
 
 document.addEventListener("click", function(event){
   if(event.target.matches("#about-nav")){
-    aboutPage.style.display = "block";
+    // aboutPage.style.display = "block";
     // projectsPage.style.display = "none";
     // contactPage.style.display = "none";
   }

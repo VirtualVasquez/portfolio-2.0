@@ -1,11 +1,6 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    /* #badge > h1{
-        font-size: 3.3em;
-    }
-    #badge > p{
-        font-size: 2.0em;
-    } */
+
     #grid{
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
@@ -22,15 +17,15 @@
 
     #g-vs-e, #f-and-b{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
     }
-    /* .margin{
+    .margin{
         width: 80%;
         margin-left: 10%;
-    } */
+    }
     #g-vs-e > div, #f-and-b > div{
-        width: 48%;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
 
