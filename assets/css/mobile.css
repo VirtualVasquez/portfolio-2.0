@@ -10,7 +10,7 @@ h4{font-size: 1.6em;}
 h5{font-size: 1.4em;}
 p, li{font-size: 1.2em}
 
-#contact, #projects, #contact{
+#contact, #projects,{
     display:none;
 }
 /* nav css */
@@ -80,24 +80,28 @@ nav a:hover {
 
 
 /* site-wide */
-.margin{
+/* .margin{
     border: solid red 1px;
     width: 90%;
     margin-left: 5%;
+} */
+#left{
+    background-color: cadetblue;
+    display:flex;
+    height: 100vh;
+    margin: auto;
+}
+#right{
+    background-color: pink;
 }
 
 /* about css */
-#intro{
-    display:flex;
-    width:100vw;
-    height: 100vh;
-    margin: auto;
-    background-color: cadetblue;
-}
+
 #badge{
+    display: flex;
+    flex-direction: column;
     margin:auto;
     width: 100%;
-    border: solid red 1px;
 }
 h1 > span{
     display: block;
@@ -136,14 +140,12 @@ h2 > span{
 .icons{
     display: flex;
     justify-content: space-around;
-    border: solid red 1px;
 }
 
 
 .rule-of-three{
     text-align: center;
-    border: 1px solid black;
-    /* padding: 1em; */
+    padding: 1em;
 }
 .rule-of-three > i{
     margin: 0.3em;

@@ -19,18 +19,32 @@
         position: relative;
         overflow: hidden;
     }
-    .margin{
+    /* .margin{
         width: 60%;
         margin-left: 20%;
+    } */
+
+    #left{
+        flex-basis: 40%;
     }
+    #right{
+        flex-basis: 60%;
+    }
+
 }
 
 @media only screen and (min-width: 1920px) {
-    .margin{
+    /* .margin{
         width: 50%;
         margin-left: 25%;
-    }
+    } */
     #grid{
     width: 50%;
+    }
+    #left{
+        flex-basis: 25%;
+    }
+    #right{
+        flex-basis: 75%;
     }
 }
