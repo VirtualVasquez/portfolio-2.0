@@ -36,70 +36,24 @@ nav a:hover {
 }
 /* nav css end */
 
-.fas{
-    color:blue;
-    align-content: margin;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* site-wide */
 .margin{
-    /* border: solid red 1px; */
     width: 90%;
     margin-left: 5%;
 }
-#left{
+.left{
     background-color: cadetblue;
     display:flex;
     height: 100vh;
     margin: auto;
 }
-#right{
+.right{
     background-color: pink;
 }
 
 /* about css */
 
 #badge{
-    display: flex;
-    flex-direction: column;
     margin:auto;
     width: 100%;
 }
@@ -142,6 +96,14 @@ h2 > span{
     justify-content: space-around;
 }
 
+#g-vs-e > div, #f-and-b > div{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#one-for-all > p, #all-for-one > p{
+    padding-left:1em;
+    padding-right: 1em;
+}
 
 .rule-of-three{
     text-align: center;

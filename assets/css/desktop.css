@@ -1,11 +1,5 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #badge > h1{
-        /* font-size: 8em; */
-    }
-    #badge > p{
-        /* font-size: 3.5em; */
-    }
     #grid{
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -19,33 +13,38 @@
         position: relative;
         overflow: hidden;
     }
-    .margin{
-        width: 60%;
-        margin-left: 20%;
-    }
     #badge > h1{
         font-size: 3.5em;
     }
     #badge > p{
         font-size: 2.0em;
     }
-
-
-
 }
 
 @media only screen and (min-width: 1920px) {
-    .margin{
+    /* .margin{
         width: 50%;
         margin-left: 25%;
+    } */
+    h2{
+        font-size: 2.5em;
     }
-    #grid{
-    width: 50%;
+    h3{
+        font-size: 2.0em;
     }
-    #left{
+    #exposition > p, #quirks > p{
+        font-size: 1.6em;
+    }
+
+
+
+    .left{
         flex-basis: 25%;
     }
-    #right{
+    .right{
         flex-basis: 75%;
+    }
+    #grid{
+        width: 50%;
     }
 }
