@@ -8,7 +8,6 @@
         flex-basis: 45%;
     }
     .right{
-        /* overflow: scroll; */
         height: 100vh;
         flex-basis: 55%;
     }
@@ -16,6 +15,7 @@
     #about{
         display: flex;
         flex-direction: column;
+        overflow: scroll;
     }
 
 

@@ -7,7 +7,6 @@
         flex-basis: 35%;
     }
     .right{
-        /* overflow: scroll; */
         height: 100vh;
         flex-basis: 65%;
     }
