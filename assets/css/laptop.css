@@ -1,4 +1,5 @@
 @media only screen and (min-width: 992px) {
+/* about css */
     h2 > span{
         display: block;
     }
@@ -6,7 +7,7 @@
         flex-basis: 35%;
     }
     .right{
-        overflow: scroll;
+        /* overflow: scroll; */
         height: 100vh;
         flex-basis: 65%;
     }
@@ -36,4 +37,14 @@
         padding-left:1em;
         padding-right: 1em;
     }
+/* about css end */
+
+/* projects css */
+#grid{
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+/* projects css end */
 }

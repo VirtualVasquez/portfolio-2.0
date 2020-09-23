@@ -4,7 +4,7 @@
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
-        width:70%;
+        width:100%;
     }
     .square{
         border: solid 1px black;
@@ -22,10 +22,6 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    /* .margin{
-        width: 50%;
-        margin-left: 25%;
-    } */
     h2{
         font-size: 2.5em;
     }
@@ -35,9 +31,6 @@
     #exposition > p, #quirks > p{
         font-size: 1.6em;
     }
-
-
-
     .left{
         flex-basis: 25%;
     }
@@ -45,6 +38,9 @@
         flex-basis: 75%;
     }
     #grid{
-        width: 50%;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        width:80%;
     }
 }
