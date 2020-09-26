@@ -10,7 +10,7 @@ h4{font-size: 1.6em;}
 h5{font-size: 1.4em;}
 p, li{font-size: 1.2em}
 
-#contact, #about{
+#about{
     display:none;
 }
 /* nav css */
@@ -161,11 +161,18 @@ h2 > span{
     display: flex;
 }
 /* end projects css */
+
+
+
 /* contact css */
+#contact{
+    height: 100vh;
+}
 fieldset > input, fieldset > label, fieldset > textarea{
     display: block;
     align-content: center;
     width: 100%;
 }
+
 /* contact css end */
 
