@@ -19,6 +19,25 @@
     #badge > p{
         font-size: 2.0em;
     }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact > .margin {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0em;
+        background-color: yellow;
+    }
+    #form-box{
+        flex-basis: 65%;
+    }
+    #social{
+        flex-basis: 30%;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -43,4 +62,11 @@
         grid-gap: 1em;
         width:80%;
     }
+    #form-box{
+        flex-basis: 75%;
+    }
+    #social{
+        flex-basis: 20%;
+    }
+}
 }
