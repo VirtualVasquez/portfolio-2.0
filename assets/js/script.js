@@ -2,7 +2,6 @@ const aboutPage = document.getElementById("about");
 const projectsPage = document.getElementById("projects");
 const contactPage = document.getElementById("contact");
 const header = document.getElementById("header");
-// const banner = document.getElementById("banner");
 const aboutFade = document.getElementById("about-fade");
 //delayLoop function and (modified) display function courtesy of Travis Horn | https://travishorn.com/delaying-foreach-iterations-2ebd4b29ad30#:~:text=Now%20you%20can%20use%20delayLoop,to%20delay%20between%20each%20iteration.
 const delayLoop = (fn, delay) => {
@@ -19,7 +18,6 @@ const typeWriter = (target, text, speed) => {
   const display = s => output.innerHTML += s;
   arr.forEach(delayLoop(display, speed))
 }
-
 const landing = () =>{
   for (let i = 1; i < 6; i++){
     if (i < 4){
@@ -45,10 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
   contactPage.style.display = "none";
   header.style.display = "none"
   aboutFade.style.display = "none"
-
-  landing();
-
-  
+  landing();  
 })
 
 $(function () {
@@ -63,14 +58,14 @@ $(function () {
 document.addEventListener("click", function(event){
   if(header.style.display == "none"){
     header.style.display = "block";
-    aboutFade.style.display = "block";
-    
+    aboutFade.style.display = "block"; 
   }
-
   if(event.target.matches("#about-nav")){
+    $('html,body').scrollTop(0)
     aboutPage.style.display = "block";
     projectsPage.style.display = "none";
     contactPage.style.display = "none";
+    $('html,body').scrollTop(0)
   }
   if(event.target.matches("#projects-nav")){
     aboutPage.style.display = "none";
@@ -82,13 +77,8 @@ document.addEventListener("click", function(event){
     projectsPage.style.display = "none";
     contactPage.style.display = "flex";
   }
-
-
 })
-
-
-
-  
+ 
   // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   //   // true for mobile device
   //   document.write("mobile device");

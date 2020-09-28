@@ -173,3 +173,10 @@ fieldset > input, fieldset > label, fieldset > textarea{
 
 /* contact css end */
 
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in 0.9s;
+}
