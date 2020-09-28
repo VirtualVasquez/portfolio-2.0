@@ -1,7 +1,6 @@
 const aboutPage = document.getElementById("about");
 const projectsPage = document.getElementById("projects");
 const contactPage = document.getElementById("contact");
-const introPage = document.getElementById("intro");
 //delayLoop function and (modified) display function courtesy of Travis Horn | https://travishorn.com/delaying-foreach-iterations-2ebd4b29ad30#:~:text=Now%20you%20can%20use%20delayLoop,to%20delay%20between%20each%20iteration.
 const delayLoop = (fn, delay) => {
   return (x, i) => {
@@ -20,6 +19,8 @@ const typeWriter = (target, text, speed) => {
 
 
 document.addEventListener("DOMContentLoaded", function(){
+  projectsPage.style.display = "none";
+  contactPage.style.display = "none"
   for (let i = 1; i < 6; i++){
     if (i < 4){
       document.getElementById("t" + i).innerHTML += `&nbsp`;
@@ -47,20 +48,20 @@ $(function () {
 
 document.addEventListener("click", function(event){
   if(event.target.matches("#about-nav")){
-    // aboutPage.style.display = "block";
-    // projectsPage.style.display = "none";
-    // contactPage.style.display = "none";
+    aboutPage.style.display = "block";
+    projectsPage.style.display = "none";
+    contactPage.style.display = "none";
   }
-  // if(event.target.matches("#projects-nav")){
-  //   aboutPage.style.display = "none";
-  //   projectsPage.style.display = "block";
-  //   contactPage.style.display = "none";
-  // } 
-  // if(event.target.matches("#contact-nav")){
-  //   aboutPage.style.display = "none";
-  //   projectsPage.style.display = "none";
-  //   contactPage.style.display = "block";
-  // }
+  if(event.target.matches("#projects-nav")){
+    aboutPage.style.display = "none";
+    projectsPage.style.display = "flex";
+    contactPage.style.display = "none";
+  } 
+  if(event.target.matches("#contact-nav")){
+    aboutPage.style.display = "none";
+    projectsPage.style.display = "none";
+    contactPage.style.display = "flex";
+  }
 
 
 })
