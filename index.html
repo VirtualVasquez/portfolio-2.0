@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="header" class="fade-target">
         <nav class="action">
             <a id="about-nav" href="#exposition">About Me</a>
             <a id="projects-nav" href="#projects">Projects</a>
@@ -36,7 +36,10 @@
                     <p id="t5"></p>
                 </div>
             </section>
+            
             <section id="about" class='right'>
+                <div id="about-fade" class="fade-target">
+
                 <div class="paper">
                     <div id="exposition" class="margin top-pad">
                         <h2>
@@ -128,6 +131,8 @@
                             </div>   
                     </div>
                 </div>
+                </div>
+
             </section>
 
             <!-- IF USING MORE THAN 6 PROJECTS... -->
@@ -145,11 +150,11 @@
             
             <section id="contact" class="right">
                 <div class="margin top-pad">
-                    <div id="form-box">
-                        <h2> Contact Me </h2>
-                        <p>Together we can start something great!</p>
+                    <div id="form-box"> 
                         <form>
                             <fieldset>
+                            <h2> Contact Me </h2>
+                            <p>Together we can start something great!</p>
                             <label for="email">Email</label>
                             <input id="email" name="email" type="text">
                             <label for="subject">Subject</label>

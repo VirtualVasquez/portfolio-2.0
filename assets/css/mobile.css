@@ -39,14 +39,11 @@ nav a:hover {
     margin-left: 5%;
 }
 .left{
-    background-color: cadetblue;
     display:flex;
     height: 100vh;
     margin: auto;
 }
-.right{
-    background-color: pink;
-}
+
 .top-pad{
     padding-top: 2em;
 }
