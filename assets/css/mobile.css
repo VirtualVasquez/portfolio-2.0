@@ -10,9 +10,6 @@ h4{font-size: 1.6em;}
 h5{font-size: 1.4em;}
 p, li{font-size: 1.2em}
 
-#about{
-    display:none;
-}
 /* nav css */
 header{
     background-color: #333;
