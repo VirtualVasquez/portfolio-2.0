@@ -151,16 +151,20 @@
             <section id="contact" class="right">
                 <div class="margin top-pad fade-in-element">
                     <div id="form-box"> 
-                        <form>
+                        <form name="contact" method="POST" data-netlify="true">
                             <fieldset>
                             <h2> Contact Me </h2>
                             <p>Together we can start something great!</p>
+                            
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text">
+
                             <label for="email">Email</label>
                             <input id="email" name="email" type="text">
-                            <label for="subject">Subject</label>
-                            <input id="subject" name="subject" type="text">
+                            
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="10">Dummy text</textarea>                  
+                            
                             <input id="submit" type="submit">
                             </fieldset>
                         </form>
