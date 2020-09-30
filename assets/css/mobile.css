@@ -1,4 +1,7 @@
 /* Extra small devices (phones, 600px and down) */
+
+
+/* site-wide */
 body{
     margin:0;
     font-family: 'Oxygen', sans-serif;
@@ -9,6 +12,28 @@ h3{font-size: 1.8em;}
 h4{font-size: 1.6em;}
 h5{font-size: 1.4em;}
 p, li{font-size: 1.2em}
+
+.margin{
+    width: 90%;
+    margin-left: 5%;
+}
+.left{
+    display:flex;
+    height: 100vh;
+    margin: auto;
+}
+
+.top-pad{
+    padding-top: 2em;
+}
+.box-shadow{
+    box-shadow: 1px 5px 20px gray;
+}
+i{
+    color: rgb(0, 89, 255);
+}
+/* site-wide end */
+
 
 /* nav css */
 header{
@@ -33,20 +58,7 @@ nav a:hover {
 }
 /* nav css end */
 
-/* site-wide */
-.margin{
-    width: 90%;
-    margin-left: 5%;
-}
-.left{
-    display:flex;
-    height: 100vh;
-    margin: auto;
-}
 
-.top-pad{
-    padding-top: 2em;
-}
 /* about css */
 
 #badge{
@@ -73,14 +85,11 @@ h2 > span{
 }
 #g-vs-e > div{
     text-align: center;
-    border: 1px solid black;
     width: 100%;
     padding-top: 3em;
     padding-bottom: 3em;
 }
-#f-and-b > div{
-    border: 1px solid black;
-}
+
 .icons{
     display: flex;
     justify-content: space-around;
@@ -125,11 +134,16 @@ h2 > span{
     grid-gap: 1em;
 }
 .square{
-    border: solid 1px black;
     width: 100%;
     padding-bottom: 100%;
     position: relative;
     overflow: hidden;
+    background-color: #eaf1fc;
+    background-image: linear-gradient(#eaf1fc, #d7e3f7);
+}
+.pretext{
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .content{

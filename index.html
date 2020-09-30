@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-        <title>Portfolio 2.0</title>
+        <title>Melvin Vasquez</title>
     <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
     <link rel="stylesheet" type="text/css" href="assets/css/p-tablet.css">
     <link rel="stylesheet" type="text/css" href="assets/css/l-tablet.css">
@@ -46,14 +46,14 @@
                             <span>Greetings, I am Melvin.</span> 
                             <span>How can I help you today?</span>
                         </h2>
-                        <p class="fade-in-element">
+                        <p class="fade-in-element invert">
                             I take pride in being able to solve problems and help people with their needs. 
                             I enjoy the challenge of a new project, and get satisfaction from a job well done.
                             Whether it's establishing an online presence, or creating a new web application altogether, I am at your service.
                         </p>
                         <div id="g-vs-e" >
         
-                            <div id="one-for-all" class="fade-in-element">
+                            <div id="one-for-all" class="fade-in-element box-shadow">
                                 <i class="fas fa-file-code fa-4x"></i>
                                 <h3>One-For-All</h3>
                                 <p>Have confidence your website will look great anywhere, anytime.</p>
@@ -64,7 +64,7 @@
                                 </div>                           
                             </div>
             
-                            <div id="all-for-one" class="fade-in-element">
+                            <div id="all-for-one" class="fade-in-element box-shadow">
                                 <i class="fas fa-users fa-4x" ></i>
                                 <h3>All-For-One</h3>
                                 <p>Know your website will have anything and everything you may need.
@@ -86,7 +86,7 @@
                         <h3>My Skills</h3>
                         <p>I'm equipped to handle anything you may need.</p>
                             <div id="f-and-b">
-                                <div id="front">
+                                <div id="front" class="box-shadow">
                                     <h4>Front-End Developer</h4>
                                         <h5>Languages</h5>
                                         <ul class="no-list">
@@ -107,7 +107,7 @@
                                         </ul>
                                 </div>
                                 
-                                <div id="back">
+                                <div id="back" class="box-shadow">
                                     <h4>Back-End Developer</h4>
                                     <h5>Databases</h5>
                                     <ul class="no-list">
@@ -150,7 +150,7 @@
             
             <section id="contact" class="right">
                 <div class="margin top-pad fade-in-element">
-                    <div id="form-box"> 
+                    <div id="form-box" class="box-shadow"> 
                         <form name="contact" method="POST" data-netlify="true">
                             <fieldset>
                             <h2> Contact Me </h2>
@@ -163,7 +163,8 @@
                             <input id="email" name="email" type="text">
                             
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="10">Dummy text</textarea>                  
+                            <textarea id="message" name="message" rows="10">
+                            </textarea>                  
                             
                             <input id="submit" type="submit">
                             </fieldset>
@@ -171,9 +172,9 @@
                     </div>
                     <div id="social">
                         <h3>Social Media</h3>
-                            <p><i class="fab fa-linkedin fa"></i> Melvin Vasquez</p>
-                            <p><i class="fab fa-twitter-square fa"></i> VirtualVasquez</p>
-                            <p><i class="fab fa-github-square fa"></i> VirtualVasquez</p>
+                            <i class="fab fa-linkedin fa fa-2x"></i>
+                            <i class="fab fa-github-square fa-2x"></i>  
+                            <i class="fab fa-twitter-square fa-2x"></i> 
                     </div>
                 </div>
             </section>
@@ -182,11 +183,11 @@
 
     <script id="project-template" type="text/x-handlebars-template">
         {{#each projects}}
-            <div class="square" >
+            <div class="square box-shadow">
                 
                 <div class="content hover-off fade-in-element" style="background-image:url('assets/images/{{picture}}.png')">
                     <div>
-                        <h4>{{name}}</h4>                    
+                        <h3 class="pretext">{{name}}</h3>                    
                     </div>
                 </div>
 

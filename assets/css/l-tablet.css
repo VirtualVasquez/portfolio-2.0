@@ -13,7 +13,8 @@
         flex-basis: 55%;
     }
     #about-fade, #projects, #contact{
-        border-left: 4px groove gray;
+        box-shadow: 4px 4px 10px inset black;
+        background-image: url(../images/crossword.png)
     }
 
     #about{
@@ -34,12 +35,9 @@
         grid-gap: 1em;
     }
     .square{
-        border: solid 1px black;
         width: 100%;
         padding-bottom: 100%;
         position: relative;
         overflow: hidden;
     }
-
-    #social
 }
