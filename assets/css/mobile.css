@@ -187,10 +187,26 @@ fieldset > input, fieldset > label, fieldset > textarea{
     align-content: center;
     width: 100%;
 }
+#submit{
+    color:rgb(0, 89, 255);
+    background-color: white;
+    border: 1px solid rgb(0, 89, 255);
+    padding: 1em;
+    width: 100%;
+}
+/* #submit:hover{
+    color:white;
+    background-color: rgb(0, 89, 255);
+} */
 
 #social{
-    /* display: flex; */
-    /* flex-direction: row; */
+    text-align: center;
+
+}
+#sm-icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
