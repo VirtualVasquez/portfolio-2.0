@@ -54,7 +54,7 @@ nav a{
 }
 nav a:hover {
     background: #ddd;
-    color: black;
+    color: rgb(0, 89, 255);
 }
 /* nav css end */
 
@@ -178,10 +178,19 @@ h2 > span{
     height: 100vh;
 }
 
+fieldset{
+    border:0;
+}
+
 fieldset > input, fieldset > label, fieldset > textarea{
     display: block;
     align-content: center;
     width: 100%;
+}
+
+#social{
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 

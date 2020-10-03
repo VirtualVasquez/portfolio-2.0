@@ -35,8 +35,13 @@
         flex-basis: 65%;
     }
     #social{
+        display: flex;
+        flex-direction: column;
         flex-basis: 30%;
+        align-content: flex-start;
+
     }
+    
 }
 
 @media only screen and (min-width: 1920px) {
