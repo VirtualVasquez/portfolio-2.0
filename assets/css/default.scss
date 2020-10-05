@@ -1,7 +1,6 @@
+$blue: rgb(0, 89, 255);
+
 /* Extra small devices (phones, 600px and down) */
-:root{
-    --main-blue: rgb(0, 89, 255);
-}
 
 
 /* site-wide */
@@ -33,7 +32,7 @@ p, li{font-size: 1.2em}
     box-shadow: 1px 5px 20px gray;
 }
 i{
-    color:var(--main-blue);
+    color: $blue;
 }
 /* site-wide end */
 
@@ -57,7 +56,7 @@ nav a{
 }
 nav a:hover {
     background: #ddd;
-    color: var(--main-blue);
+    color: rgb(0, 89, 255);
 }
 /* nav css end */
 
@@ -106,15 +105,12 @@ h2 > span{
     padding-right: 1em;
 }
 
-#quirks{
+.rule-of-three{
     text-align: center;
     padding: 1em;
 }
-#quirks > i{
+.rule-of-three > i{
     margin: 0.3em;
-}
-#f-and-b > div{
-    padding-bottom: 1em;
 }
 
 .no-list{
@@ -144,7 +140,8 @@ h2 > span{
     padding-bottom: 100%;
     position: relative;
     overflow: hidden;
-    /* background-image: linear-gradient(white, #d7e3f7); */
+    background-color: #eaf1fc;
+    background-image: linear-gradient(#eaf1fc, #d7e3f7);
 }
 .pretext{
     color: white;
@@ -192,46 +189,26 @@ fieldset > input, fieldset > label, fieldset > textarea{
     align-content: center;
     width: 100%;
 }
-
-input, textarea{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 1em;
-}
 #submit{
-    margin-top: 1em;
-    background-color:var(--main-blue);
-    color: white;
-    border: 1px solid var(--main-blue);
+    color:rgb(0, 89, 255);
+    background-color: white;
+    border: 1px solid rgb(0, 89, 255);
     padding: 1em;
     width: 100%;
 }
-#submit:hover{
-    background-color:white;
-    color: var(--main-blue);
-}
-
-
-#sm-icons{
-    width: 100%;
-    padding-bottom:1em;
-}
-
-#contact > .margin {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+/* #submit:hover{
+    color:white;
+    background-color: rgb(0, 89, 255);
+} */
 
 #social{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+
 }
-#sm-icons > a{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+#sm-icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
