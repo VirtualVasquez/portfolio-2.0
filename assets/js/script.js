@@ -3,6 +3,7 @@ const projectsPage = document.getElementById("projects");
 const contactPage = document.getElementById("contact");
 const header = document.getElementById("header");
 const aboutFade = document.getElementById("about-fade");
+const body = document.getElementById("body");
 //delayLoop function and (modified) display function courtesy of Travis Horn | https://travishorn.com/delaying-foreach-iterations-2ebd4b29ad30#:~:text=Now%20you%20can%20use%20delayLoop,to%20delay%20between%20each%20iteration.
 const delayLoop = (fn, delay) => {
   return (x, i) => {
@@ -41,8 +42,9 @@ const landing = () =>{
 document.addEventListener("DOMContentLoaded", function(){
   projectsPage.style.display = "none";
   contactPage.style.display = "none";
-  header.style.display = "none"
-  aboutFade.style.display = "none"
+  header.style.display = "none";
+  aboutFade.style.display = "none";
+  body.style.visibility = "visible";
   landing();  
 })
 
